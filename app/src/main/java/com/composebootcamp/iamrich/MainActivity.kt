@@ -29,6 +29,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.sp
 import com.composebootcamp.iamrich.ui.theme.BlueGray
 import com.composebootcamp.iamrich.ui.theme.IAmRichTheme
 
@@ -86,7 +87,7 @@ fun IamRichApp(modifier: Modifier = Modifier) {
 @Composable
 fun BuildAppBar() {
     CenterAlignedTopAppBar(colors = TopAppBarDefaults.smallTopAppBarColors(containerColor = BlueGray),
-        title = { Text("I am Rich", color = Color.White, style = TextStyle(fontWeight = FontWeight.Bold)) },
+        title = { Text("I am Rich", color = Color.White, style = TextStyle(fontSize = 24.sp, fontWeight = FontWeight.Bold)) },
         navigationIcon = {
             Icon(imageVector = Icons.Default.Menu, contentDescription = "Menu", tint = Color.White)
         })
